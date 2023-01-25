@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href = "styles.css">
+  <script src="scripts.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Natalii Helak</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/39fa6c1758.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- HEADLINE -->
+    <div class="container">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="CV_Natalia_Helak.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- WELCOME -->
+    <div class="content">
+        <p>Hi, I am</p><h1 class="me">Natalie Helak. Nice to meet you.</h1>
+        <div>
+            <p>IT student creating beautiful and functional applications with love.</p>
+            <div id="newsletter">
+                <input type="button" id="newsletter" onclick="show_popup()" value="Newsletter">
+            </div>
+        </div>
+    </div>
+    <!-- POP-UP -->
+    <div class="popup">
+        <div class="model">
+            <div class="close" onclick="close_popup()">
+                +
+            </div>
+            <img src="icons/working.png">
+            <p>Sign up to get my newsletter each week!</p>
+            <form action="" class="">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="email" placeholder="Enter Email Address" required>
+                <a href=""><button type="submit" onclick="ValidateEmail(document.form.email)">Submit</button></a>
+            </form>
+        </div>
+    </div>
+    <!-- ABOUT ME -->
+    <div id="aboutme">
+        <h3>About me</h3>
+        <p>I graduated from Technical Secondary School of Economics and Administration in Poznań – Advertising methods and organisation technician. I have three professional qualifications: <span class="vis">AU.29</span> - selling marketing products and services, <span class="vis">AU.30</span> - organization and running advertising campaign and <span class="vis">EE.09</span> - programming, creating and administrating websites and databases.
+        </p>
+        <p>My the biggest hobby is doing all kinds of sports, especially jogging and swimming. I can't imagine living without active lifestyle.
+        I also play on the keyboard. I've learnt simple pieces so far but I gonna to do more. I'm into art like drawing or painting on pieces of wood. My art part of soul I try use to do the best websites and apps I could do.
+        </p>
+        <p>In the future I plan to become a webdeveloper and create beautiful and simply websites and apps.</p>
+    </div>
+    <!-- SKILLS -->
+    <div id="skill">
+    <h3>Skills</h3>
+    <div id="skills">
+        <div class="box">
+            <div class="cards">
+                <h4>LANGUAGES</h4>
+                <img src="icons/c++.png" style="border-radius: 50px;"/>
+                <img src="icons/c.png" style="border-radius: 40px;" />
+                <p></p><img src="icons/javascript.png" />
+                <img src="icons/python.png" />
+            </div>
+        </div>
+        <div class="box">
+            <div class="cards">
+                <h4>FRONTEND</h4>
+                <img src="icons/html.png" />
+                <img src="icons/css.png" />
+            </div>
+        </div>
+        <div class="box">
+            <div class="cards">
+                <h4>SYSTEM DATABASES</h4>
+                <img src="icons/mysql.png" />
+                <img src="icons/postgre.png" />
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- PROJECTS -->
+    <div id="projects">
+    <div class="swiper mySwiper">
+        <h3>My projects</h3>
+        <div class="swiper-wrapper"> 
+        <div class="swiper-slide">
+            <div class="swiper-text">
+                <h4>PIZZA DEV</h4>
+                <p>This is an menu app that let you give an order in pizzeria. You can chose food, type of delivery, number of table in restaurant. <br>Techonologies: <span class="vis">C++, Visual Studio Microsoft 2022</span></p>
+            </div>
+            <img src="projects/pizza.png"/>
+        </div>
+        <div class="swiper-slide">
+            <div class="swiper-text">
+                <h4>DIABETES TRAINING MODEL</h4>
+                <p>It is a project that learns predicting if someone will be suffer from diabetes or not. <br> Technologies: <span class="vis">Python 3.9, Visual Studio Code</span></p>
+            </div>
+            <img src="projects/python.png"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    </div>
+    <!-- CALCULATOR -->
+    <form>
+        <div class="calculator">
+        <h3>Calculator</h3>
+        <h5>MY SERVICES</h5>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="option1" name="option1"  value="Languages">
+            <label class="form-check-label" for="defaultCheck1" onClick="licz()">
+                Programming languages (C, C++, C#, Java) 25 zl per hour
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Python" id="option2" name="option2">
+            <label class="form-check-label" for="defaultCheck2">
+                Machine learning (Python) 22 zl per hour
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Frontend" id="option3" name="option3">
+            <label class="form-check-label" for="defaultCheck3">
+                Front-end (HTML and CSS) 35 zl per hour
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Sbd" id="option4" name="option4">
+            <label class="form-check-label" for="defaultCheck4">
+                System Databases (PostgreSQL, MySQL) 25 zl per hour
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Management" id="option5" name="option5">
+            <label class="form-check-label" for="defaultCheck5">
+                Management (GitLab, Trello) 27 zl per hour
+            </label>
+        </div>
+        <h5><br>TYPE OF WORK</h5>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="radio1" value="online" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Online
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio" id="radio2" value="office" checked>
+            <label class="form-check-label" for="exampleRadios2">
+              At the office
+            </label>
+            <div class="form-check">
+                <br>
+                <label class="form-check-label" for="total">
+                    <input type="button" onclick="licz()" value="Salary">
+                    <input type="textbox" name="total" id="total">
+                </label>
+            </div>
+          </div>
+        </form>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact">
+        <form name="form" action="https://formsubmit.co/nhelak2001@gmail.com" method="POST">
+            <h3>Contact me</h3>
+            <input type="hidden" name="_subject" value="New email!"><br>
+            <label for="exampleInputEmail1">First Name*</label>
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <label for="exampleInputEmail1">Email address*</label>
+            <input type="text" name="email" placeholder="Enter Email Address" required>
+            <label for="exampleInputEmail1">Business (optional)</label>
+            <input type="text" name="business" placeholder="Enter Business">
+            <label for="exampleInputEmail1">Message</label>
+            <input type="text" name="message" placeholder="Write your message here...">
+            <button type="submit" onclick="ValidateEmail(document.form.email)">Send</button>
+        </form>
+    </div>
+    <!-- SOCIAL MEDIA -->
+    <div class="social-media">
+        <ul>
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/natalia_helak/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/NatalieJoan?tab=repositories"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/natalia-helak-903957233/"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <!-- COPYRIGHT -->
+    <footer>
+        Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2023 Natalie Helak. All Rights Reserved.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
